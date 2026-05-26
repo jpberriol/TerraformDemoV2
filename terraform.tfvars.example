@@ -1,0 +1,33 @@
+###############################################
+# terraform.tfvars.example
+#
+# Copia este archivo como terraform.tfvars y
+# ajusta los valores para tu demo.
+###############################################
+
+# Region de despliegue.
+aws_region = "us-east-1"
+
+# Nombre de la VPC existente (tag Name).
+vpc_name = "mi-vpc-clase"
+
+# Nombre de la instancia.
+instance_name = "clase-terraform-ec2"
+
+# Tipo de instancia.
+instance_type = "t3.micro"
+
+# Opcional: nombre de un key pair existente en AWS.
+# Si no tienes key pair, deja null.
+key_name = null
+
+# Para clases/lab puedes abrir SSH a todo internet.
+# En escenarios reales, limita esto a tu IP publica.
+ssh_ingress_cidr = "0.0.0.0/0"
+
+project_tags = {
+  Project     = "TerraformClase"
+  Environment = "Lab"
+  ManagedBy   = "Terraform"
+  Owner       = "Profesor"
+}

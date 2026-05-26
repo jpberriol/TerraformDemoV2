@@ -1,0 +1,14 @@
+# Archivos y carpetas locales de Terraform
+.terraform/
+.terraform.lock.hcl
+
+# Archivos de estado (contienen datos sensibles)
+*.tfstate
+*.tfstate.*
+
+# Variables locales reales (si usas terraform.tfvars)
+terraform.tfvars
+
+# Logs de errores y crash
+crash.log
+crash.*.log
